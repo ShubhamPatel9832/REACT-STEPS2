@@ -1,4 +1,6 @@
 import Card from "./components/Card";
+import DateCounter from "./components/DateCounter";
+import TextExpander from "./components/TextExpander";
 import "./index.css";
 
 const appStyle = {
@@ -7,13 +9,16 @@ const appStyle = {
     flexDirection: "column",
     gap: "4rem",
     alignItems: "center",
-    height: "100vh",
+    // height: "100vh",
+    padding: "4rem 0",
 };
 
 function App() {
     return (
         <div style={appStyle}>
             <Card />
+            <TextExpander />
+            <DateCounter />
         </div>
     );
 }
