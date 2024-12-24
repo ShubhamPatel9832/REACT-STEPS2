@@ -38,17 +38,14 @@ const rowText = ` Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                 expedita voluptatibus quasi ipsam possimus corporis asperiores
                 quaerat temporibus magni! Qui iste corporis nihil molestias!
                 Asperiores perferendis aspernatur laborum minima quod minus
-                placeat neque?`;
+                placeat neque? `;
 
-const btn = {
-    padding: "0.5rem",
-    borderRadius: "20px",
+const btnStyle = {
     border: "none",
-    backgroundColor: "#da77f2",
-    fontSize: "1rem",
-    color: "white",
+    backgroundColor: "transparent",
+    marginLeft: "0.5rem",
     cursor: "pointer",
-    marginTop: "5px",
+    color: "blue",
 };
 
 function TextExpander() {
@@ -63,9 +60,9 @@ function TextExpander() {
 
     return (
         <div style={textStyle}>
-            <p>{text}</p>
-            <button onClick={handleClick} style={btn}>
-                {show ? "show less" : "show more  "}
+            <span>{text}</span>
+            <button onClick={handleClick} style={btnStyle}>
+                {show ? "show less" : "...show more  "}
             </button>
         </div>
     );

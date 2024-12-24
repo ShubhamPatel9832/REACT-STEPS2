@@ -1,0 +1,16 @@
+.starBox {
+    display: inline-block;
+    /* background-color: gray; */
+    height: 2rem;
+    width: 2rem;
+}
+
+.ratingBox {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.ratingBox > span {
+    font-size: 1.5rem;
+}
